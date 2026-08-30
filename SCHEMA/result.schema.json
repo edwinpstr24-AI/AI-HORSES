@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aihorses.io/schema/result.schema.json",
+  "title": "AI Horses — Graded Result",
+  "description": "Written the morning after by the grader, from official Equibase charts. Lives in a SEPARATE file from the card. The card is never touched again after publication — that separation is what makes the record auditable.",
+  "type": "object",
+  "required": ["card_id", "graded_at", "source", "races", "totals"],
+  "additionalProperties": false,
+  "properties": {
+    "card_id": { "type": "string" },
+    "graded_at": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "string",
+      "const": "equibase_official_chart",
+      "description": "Official Equibase results are ground truth over any preview or third-party source."
+    },
+    "races": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["race_number", "outcome"],
+        "additionalProperties": false,
+        "properties": {
+          "race_number": { "type": "integer" },
+          "winner_program": { "type": "string" },
+          "winner_horse": { "type": "string" },
+          "win_payoff": { "type": "number" },
+          "outcome": {
+            "type": "string",
+            "enum": ["hit", "miss", "alternate_won", "no_play", "cancelled", "scratched_out"],
+            "description": "hit = winner was in the three. alternate_won = the named alternate won, which is a miss but a tracked one. no_play excluded from rate entirely."
+          },
+          "confidence_at_publication": { "type": "string" },
+          "revision_applied": { "type": "boolean", "default": false },
+          "note": { "type": "string", "description": "Honest post-mortem, especially on the misses." }
+        }
+      }
+    },
+    "tickets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "races", "cost", "returned"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "type": "string" },
+          "races": { "type": "array", "items": { "type": "integer" } },
+          "cost": { "type": "number" },
+          "returned": { "type": "number" },
+          "alive_through_leg": { "type": "integer", "description": "Where it died. More useful than a binary." }
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "required": ["races_played", "hits", "coverage_rate"],
+      "additionalProperties": false,
+      "properties": {
+        "races_carded": { "type": "integer" },
+        "races_played": { "type": "integer", "description": "Excludes no_play and cancelled." },
+        "no_plays": { "type": "integer" },
+        "hits": { "type": "integer" },
+        "coverage_rate": {
+          "type": "number",
+          "description": "hits / races_played. Winner-in-top-3. NOT a win rate — the method targets coverage, and reporting a win rate would misrepresent it."
+        },
+        "alternate_wins": { "type": "integer" },
+        "by_confidence": {
+          "type": "object",
+          "description": "The number that actually matters. If 'single' does not outperform 'spread', the confidence tiers are decorative.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "played": { "type": "integer" },
+              "hits": { "type": "integer" },
+              "rate": { "type": "number" }
+            }
+          }
+        },
+        "ticket_cost": { "type": "number" },
+        "ticket_return": { "type": "number" },
+        "roi": { "type": "number" }
+      }
+    }
+  }
+}

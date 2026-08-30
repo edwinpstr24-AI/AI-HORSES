@@ -1,0 +1,147 @@
+{
+  "card_id": "CT-2026-08-29-E",
+  "track": {
+    "code": "CT",
+    "name": "Charles Town",
+    "country": "USA",
+    "configuration": {
+      "shape": "half-mile bullring",
+      "framework": "position_dominated",
+      "note": "Early pace figure and prior Charles Town experience outweigh raw speed figures. Figures earned at galloping ovals do not translate here and are discounted on arrival."
+    }
+  },
+  "race_date": "2026-08-29",
+  "day_evening": "E",
+  "published_at": "2026-08-29T22:10:00Z",
+  "engine": {
+    "version": "0.9.0-preblank",
+    "factors_active": 17,
+    "factors_blank": [
+      "Top Power",
+      "Top Speed",
+      "Top Class",
+      "Top Pace",
+      "Key Ratings",
+      "Key Race Info"
+    ],
+    "weight_note": "Scoring formula divides across three components (ASF, BSFAD, TOP RATINGS). With all six TOP RATINGS inputs unsourced, the engine runs at roughly two-thirds designed weight. Disclosed, not hidden. Version bumps to 1.0.0 when resolved."
+  },
+  "data_pull": {
+    "source": "equibase_entries_plus",
+    "pulled_at": "2026-08-29T21:40:00Z",
+    "races_unavailable": []
+  },
+  "races": [
+    {
+      "race_number": 7,
+      "post_time": "2026-08-30T01:36:00Z",
+      "distance": "7f",
+      "surface": "dirt",
+      "race_type": "Allowance",
+      "field_size": 6,
+      "scratches_known": [2, 5],
+      "no_play": false,
+      "selections": [
+        {
+          "program": "7",
+          "horse": "Life Is Daily",
+          "case": "Top average figure, top figure at this distance, 67% win rate, second-fastest early pace.",
+          "reservation": "67% is off six starts only — a thin sample. Jockey/trainer combo is 0%.",
+          "coverage_only": false
+        },
+        {
+          "program": "6",
+          "horse": "Tricks R for Juba",
+          "case": "Best single figure in the race, fastest early pace, best earnings per start, won last out.",
+          "reservation": "One start at 7 furlongs and it produced a 72 against a 94 best. His whole profile was built shorter.",
+          "coverage_only": false
+        },
+        {
+          "program": "3",
+          "horse": "Mr. Dumbledore",
+          "case": "Second-best average figure, eleven starts at 7 furlongs.",
+          "reservation": "Slowest early pace in the field by a wide margin. He needs the two speed horses above to cook each other — which at 77 and 76 early is a real possibility. That is exactly why he is third and not higher.",
+          "coverage_only": false
+        }
+      ],
+      "alternate": {
+        "program": "4",
+        "horse": "W V Lad",
+        "morning_line": "12/1",
+        "reason": "20% winner, 90 at this track, third-fastest early pace, 30% connections.",
+        "left_off_because": "5th last out and 51 days since.",
+        "near_coin_flip": false
+      },
+      "fades": [],
+      "confidence": "single",
+      "scratch_risk": "low",
+      "read_quality": "strong",
+      "summary": "Best race on the card and the cleanest data — every runner has done all of its racing at Charles Town, so nothing has to be translated across tracks. Single-leaning on Life Is Daily. If you are pressing anywhere tonight, press here."
+    },
+    {
+      "race_number": 8,
+      "post_time": "2026-08-30T02:02:00Z",
+      "distance": "6.5f",
+      "surface": "dirt",
+      "race_type": "Clm $15,700",
+      "field_size": 6,
+      "scratches_known": [1, 3, 5, 9, 11],
+      "no_play": false,
+      "selections": [
+        {
+          "program": "8",
+          "horse": "Absolute Grit",
+          "morning_line": "20/1",
+          "case": "Top average figure, top figure at this distance, 50% jockey/trainer combo.",
+          "reservation": "The eye-catching 104 was earned on surface elsewhere. His best here is 84, which is ordinary in this group. Treating 84 as the real number, per the rule about explaining an outlier before using it.",
+          "coverage_only": false
+        },
+        {
+          "program": "2",
+          "horse": "Outdoor Cat",
+          "morning_line": "1/2",
+          "case": "Heavy favorite on figures.",
+          "reservation": "Zero starts at Charles Town, 107 days off, and a 72 as his best at 6.5 furlongs — at 1/2. Worst value on the card. In the three for ticket coverage only; would not bet him.",
+          "coverage_only": true
+        },
+        {
+          "program": "7",
+          "horse": "Jester's Song",
+          "case": "Steadiest of the rest, 89 at this distance.",
+          "reservation": "13% winner over 39 starts. A board-hitter, not a winner.",
+          "coverage_only": false
+        }
+      ],
+      "alternate": {
+        "program": "4",
+        "horse": "Cowboy At Heart",
+        "morning_line": "30/1",
+        "reason": "Best figure in the field at this exact distance at this exact track, off 51 starts here, 25% jockey/trainer combo.",
+        "left_off_because": "A 94 appearing once in 58 starts is an unexplained outlier, and his average figure is 13 points off the top pair.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "4",
+          "horse": "Cowboy At Heart",
+          "morning_line": "30/1",
+          "case_for": "Owns the best distance-and-track figure in the field with 51 starts of local experience behind it.",
+          "why_still_off": "Method says an unexplained outlier is not promoted. But at 30/1 in a six-horse field this is where an extra body should be spent if the ticket can carry one."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "high",
+      "scratch_risk_note": "Five of eleven already off. One more and this is unplayable.",
+      "read_quality": "weak",
+      "summary": "Five scratches out of eleven. The race actually running bears no resemblance to the one that was drawn, and any read on it should be treated with suspicion."
+    }
+  ],
+  "revisions": [
+    {
+      "revised_at": "2026-08-29T23:15:00Z",
+      "reason": "scratch",
+      "detail": "Race Day Changes feed re-checked. No further scratches beyond the nine already reflected above. Card stands as published.",
+      "changes": []
+    }
+  ]
+}
