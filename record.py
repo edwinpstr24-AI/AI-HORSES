@@ -2,7 +2,7 @@
 """
 AI Horses - record.py
 
-Reads every file in RESULTS/ and rebuilds RECORD.md - the public running
+Reads every file in RESULTS/ and rebuilds README.md - the public running
 record. Run it after each grading, then commit and push.
 
 Usage:
@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(HERE, "RESULTS")
-OUT = os.path.join(HERE, "RECORD.md")
+OUT = os.path.join(HERE, "README.md")
 
 CONF_ORDER = ["single", "standard", "spread"]
 
