@@ -115,9 +115,26 @@ def main():
     L.append("|---|---|---|---|---|")
     for r in results:
         t = r["totals"]
-        L.append(f"| `{r['card_id']}` | {t['races_played']} | {t['hits']} | "
+        cid = r["card_id"]
+        link = f"[{cid}](CARDS-VIEW/{cid}.md)" \
+            if os.path.exists(os.path.join(HERE, "CARDS-VIEW", f"{cid}.md")) else f"`{cid}`"
+        L.append(f"| {link} | {t['races_played']} | {t['hits']} | "
                  f"{pct(t['hits'], t['races_played'])} | {t.get('no_plays', 0)} |")
     L.append("")
+
+    import glob as _g
+    graded_ids = {r["card_id"] for r in results}
+    pending = []
+    for p in sorted(_g.glob(os.path.join(HERE, "CARDS", "*.json"))):
+        cid = json.load(open(p, encoding="utf-8"))["card_id"]
+        if cid not in graded_ids and os.path.exists(
+                os.path.join(HERE, "CARDS-VIEW", f"{cid}.md")):
+            pending.append(cid)
+    if pending:
+        L.append("## Published, not yet graded\n")
+        for cid in pending:
+            L.append(f"- [{cid}](CARDS-VIEW/{cid}.md)")
+        L.append("")
 
     misses = [(r["card_id"], rc) for r in results for rc in r["races"]
               if rc["outcome"] in ("miss", "alternate_won") and rc.get("note")]
