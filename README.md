@@ -13,7 +13,7 @@ meaning and is not graded.
 No-play races are excluded from the rate entirely. Declining to play is a 
 decision, not an absence, and it is recorded as one.
 
-*Rebuilt 2026-08-31 02:09 UTC from 1 graded card(s).*
+*Rebuilt 2026-08-31 02:14 UTC from 1 graded card(s).*
 
 ## Overall
 
@@ -39,7 +39,11 @@ are decoration and this table is where that shows up.
 
 | Card | Played | Hits | Rate | No-play |
 |---|---|---|---|---|
-| `CT-2026-08-29-E` | 2 | 2 | 100.0% | 0 |
+| [CT-2026-08-29-E](CARDS-VIEW/CT-2026-08-29-E.md) | 2 | 2 | 100.0% | 0 |
+
+## Published, not yet graded
+
+- [GP-2026-08-31-D](CARDS-VIEW/GP-2026-08-31-D.md)
 
 ---
 
