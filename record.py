@@ -2,7 +2,7 @@
 """
 AI Horses - record.py
 
-Reads every file in RESULTS/ and rebuilds RECORD.md - the public running
+Reads every file in RESULTS/ and rebuilds README.md - the public running
 record. Run it after each grading, then commit and push.
 
 Usage:
@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(HERE, "RESULTS")
-OUT = os.path.join(HERE, "RECORD.md")
+OUT = os.path.join(HERE, "README.md")
 
 CONF_ORDER = ["single", "standard", "spread"]
 
@@ -37,6 +37,7 @@ def main():
     by_conf = {}
     cost = ret = 0.0
     has_tickets = False
+    eng_played = eng_hits = 0
 
     for r in results:
         t = r["totals"]
@@ -48,6 +49,8 @@ def main():
             agg = by_conf.setdefault(c, {"played": 0, "hits": 0})
             agg["played"] += b["played"]
             agg["hits"] += b["hits"]
+        eng_played += t.get("engine_played", 0)
+        eng_hits += t.get("engine_hits", 0)
         if "ticket_cost" in t:
             has_tickets = True
             cost += t["ticket_cost"]
@@ -76,6 +79,8 @@ def main():
     L.append(f"| No-play races | {no_plays} |")
     L.append(f"| **Winner in top 3** | **{hits}/{played} = {pct(hits, played)}** |")
     L.append(f"| Named alternate won | {alt_wins} |")
+    if eng_played:
+        L.append(f"| Scoring engine alone | {eng_hits}/{eng_played} = {pct(eng_hits, eng_played)} |")
     if has_tickets and cost:
         L.append(f"| Ticket outlay | ${cost:,.2f} |")
         L.append(f"| Ticket return | ${ret:,.2f} |")
@@ -93,6 +98,17 @@ def main():
         b = by_conf[c]
         L.append(f"| {c} | {b['played']} | {b['hits']} | {pct(b['hits'], b['played'])} |")
     L.append("")
+
+    if eng_played:
+        L.append("## Engine vs. final selections\n")
+        L.append("The scoring workbook produces a ranked top 4 before any judgment is ")
+        L.append("applied. Both are graded. If the final selections do not beat the raw ")
+        L.append("engine over a real sample, the judgment layer is not earning its place.\n")
+        L.append("| | Played | Hits | Rate |")
+        L.append("|---|---|---|---|")
+        L.append(f"| Scoring engine, top 3 | {eng_played} | {eng_hits} | {pct(eng_hits, eng_played)} |")
+        L.append(f"| Final selections | {played} | {hits} | {pct(hits, played)} |")
+        L.append("")
 
     L.append("## Card by card\n")
     L.append("| Card | Played | Hits | Rate | No-play |")

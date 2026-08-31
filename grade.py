@@ -148,6 +148,16 @@ def grade_race(race, revisions):
         except ValueError:
             pass
 
+    eng = race.get("engine_output", {}).get("ranked", [])
+    if eng:
+        eng_top3 = [e["program"].upper() for e in eng if e["rank"] <= 3]
+        entry["engine_outcome"] = "hit" if winner in eng_top3 else "miss"
+        if entry["engine_outcome"] != ("hit" if outcome == "hit" else "miss"):
+            verdict = "engine had him" if entry["engine_outcome"] == "hit" else "engine missed him"
+            print(f"    ({verdict} - judgment and scores disagreed)")
+    else:
+        entry["engine_outcome"] = "no_engine_data"
+
     if outcome in ("miss", "alternate_won"):
         note = ask("    Post-mortem - why was he not in the three? ")
         if note:
@@ -209,6 +219,13 @@ def totals(race_results, ticket_results):
         "alternate_wins": len(alt_wins),
         "by_confidence": by_conf,
     }
+
+    eng = [r for r in counted if r.get("engine_outcome") in ("hit", "miss")]
+    if eng:
+        eng_hits = sum(1 for r in eng if r["engine_outcome"] == "hit")
+        t["engine_played"] = len(eng)
+        t["engine_hits"] = eng_hits
+        t["engine_coverage_rate"] = round(eng_hits / len(eng), 4)
 
     if ticket_results:
         cost = sum(x["cost"] for x in ticket_results)
@@ -278,6 +295,9 @@ def main():
         print(f"  Alternate won:   {t['alternate_wins']}")
     for conf, b in sorted(t["by_confidence"].items()):
         print(f"    {conf:<10} {b['hits']}/{b['played']}  {b['rate']:.1%}")
+    if "engine_played" in t:
+        print(f"  Engine alone:    {t['engine_hits']}/{t['engine_played']}  "
+              f"= {t['engine_coverage_rate']:.1%}")
     if "roi" in t:
         print(f"  Tickets: ${t['ticket_cost']:.2f} out, ${t['ticket_return']:.2f} back, ROI {t['roi']:+.1%}")
     print("=" * 52)
