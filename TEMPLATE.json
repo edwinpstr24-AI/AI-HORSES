@@ -1,0 +1,118 @@
+{
+  "card_id": "CT-2026-08-29-E",
+  "track": {
+    "code": "CT",
+    "name": "Charles Town",
+    "country": "USA",
+    "configuration": {
+      "shape": "half-mile bullring",
+      "framework": "position_dominated",
+      "note": "What this configuration does to the race. One or two sentences."
+    }
+  },
+  "race_date": "2026-08-29",
+  "day_evening": "E",
+  "published_at": "2026-08-29T22:10:00Z",
+  "engine": {
+    "version": "0.9.0-preblank",
+    "factors_active": 17,
+    "factors_blank": [
+      "Top Power",
+      "Top Speed",
+      "Top Class",
+      "Top Pace",
+      "Key Ratings",
+      "Key Race Info"
+    ],
+    "weight_note": "Engine runs at roughly two-thirds designed weight with Top Ratings unsourced. Disclosed, not hidden."
+  },
+  "data_pull": {
+    "source": "equibase_entries_plus",
+    "pulled_at": "2026-08-29T21:40:00Z",
+    "races_unavailable": []
+  },
+  "races": [
+    {
+      "race_number": 1,
+      "post_time": "2026-08-29T23:10:00Z",
+      "distance": "6.5f",
+      "surface": "dirt",
+      "race_type": "Clm $15,700",
+      "field_size": 8,
+      "scratches_known": [4],
+      "no_play": false,
+      "selections": [
+        {
+          "program": "3",
+          "horse": "Horse Name",
+          "morning_line": "5/2",
+          "case": "Why he is in.",
+          "reservation": "REQUIRED. What could go wrong with him.",
+          "coverage_only": false
+        },
+        {
+          "program": "7",
+          "horse": "Horse Name",
+          "case": "Why he is in.",
+          "reservation": "REQUIRED."
+        },
+        {
+          "program": "1",
+          "horse": "Horse Name",
+          "case": "Why he is in.",
+          "reservation": "REQUIRED."
+        }
+      ],
+      "alternate": {
+        "program": "5",
+        "horse": "Horse Name",
+        "morning_line": "12/1",
+        "reason": "The case FOR him.",
+        "left_off_because": "The case against. Both, always.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "2",
+          "horse": "Horse Name",
+          "morning_line": "8/1",
+          "case_for": "Step 8 audit - the real argument he might win.",
+          "why_still_off": "Why the method leaves him off anyway."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "low",
+      "scratch_risk_note": "Only when medium or high.",
+      "read_quality": "adequate",
+      "summary": "The reasoning. Subscriber-facing prose."
+    },
+    {
+      "race_number": 2,
+      "post_time": "2026-08-29T23:40:00Z",
+      "distance": "4.5f",
+      "surface": "dirt",
+      "race_type": "Maiden Special Weight",
+      "field_size": 9,
+      "no_play": true,
+      "no_play_reason": "Nine first-time starters, no speed figures. Data cannot separate the field. Correct call is no play, not a wider spread.",
+      "confidence": "no_play",
+      "read_quality": "weak"
+    }
+  ],
+  "tickets": [
+    {
+      "type": "pick4",
+      "races": [5, 6, 7, 8],
+      "structure": [
+        ["3"],
+        ["1", "4", "6"],
+        ["2", "5"],
+        ["7", "8", "9", "10"]
+      ],
+      "base": 0.5,
+      "cost": 12.0,
+      "note": "1 x 3 x 2 x 4 = 24 combinations at 50 cents."
+    }
+  ],
+  "revisions": []
+}
