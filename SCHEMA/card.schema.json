@@ -1,10 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://aihorses.io/schema/card.schema.json",
-  "title": "AI Horses — Selection Card",
+  "title": "AI Horses \u2014 Selection Card",
   "description": "One published card. Committed BEFORE first post and never edited afterward. Scratch updates are appended to revisions[]. Results live in a separate file so this one stays immutable.",
   "type": "object",
-  "required": ["card_id", "track", "race_date", "day_evening", "published_at", "engine", "races"],
+  "required": [
+    "card_id",
+    "track",
+    "race_date",
+    "day_evening",
+    "published_at",
+    "engine",
+    "races"
+  ],
   "additionalProperties": false,
   "properties": {
     "card_id": {
@@ -14,43 +22,99 @@
     },
     "track": {
       "type": "object",
-      "required": ["code", "name", "configuration"],
+      "required": [
+        "code",
+        "name",
+        "configuration"
+      ],
       "additionalProperties": false,
       "properties": {
-        "code": { "type": "string", "description": "Equibase trackId, e.g. CT, SAR, WO" },
-        "name": { "type": "string" },
-        "country": { "type": "string", "enum": ["USA", "CAN"], "default": "USA" },
+        "code": {
+          "type": "string",
+          "description": "Equibase trackId, e.g. CT, SAR, WO"
+        },
+        "name": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string",
+          "enum": [
+            "USA",
+            "CAN"
+          ],
+          "default": "USA"
+        },
         "configuration": {
           "type": "object",
           "description": "Step 0. Recorded per card because it decides which framework was applied.",
-          "required": ["shape", "framework"],
+          "required": [
+            "shape",
+            "framework"
+          ],
           "additionalProperties": false,
           "properties": {
-            "shape": { "type": "string", "description": "e.g. 'half-mile bullring', '7/8-mile Tapeta oval'" },
+            "shape": {
+              "type": "string",
+              "description": "e.g. 'half-mile bullring', '7/8-mile Tapeta oval'"
+            },
             "framework": {
               "type": "string",
-              "enum": ["position_dominated", "figure_dominated"],
+              "enum": [
+                "position_dominated",
+                "figure_dominated"
+              ],
               "description": "Never mixed on one card."
             },
-            "note": { "type": "string" }
+            "note": {
+              "type": "string"
+            }
           }
         },
         "bias": {
           "type": "object",
           "description": "Omit entirely when no bias table with a disclosed sample was available. Never state a bias without its sample size.",
-          "required": ["sample_size", "source", "description"],
+          "required": [
+            "sample_size",
+            "source",
+            "description"
+          ],
           "additionalProperties": false,
           "properties": {
-            "sample_size": { "type": "integer", "minimum": 1 },
-            "source": { "type": "string", "enum": ["equibase", "trackmaster", "drf", "brisnet"] },
-            "description": { "type": "string" },
-            "applied_symmetrically": { "type": "boolean", "default": true }
+            "sample_size": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "equibase",
+                "trackmaster",
+                "drf",
+                "brisnet"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "applied_symmetrically": {
+              "type": "boolean",
+              "default": true
+            }
           }
         }
       }
     },
-    "race_date": { "type": "string", "format": "date" },
-    "day_evening": { "type": "string", "enum": ["D", "E"] },
+    "race_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "day_evening": {
+      "type": "string",
+      "enum": [
+        "D",
+        "E"
+      ]
+    },
     "published_at": {
       "type": "string",
       "format": "date-time",
@@ -59,28 +123,55 @@
     "engine": {
       "type": "object",
       "description": "Which version of the scoring system produced this. Makes the record segmentable when the engine changes.",
-      "required": ["version", "factors_active", "factors_blank"],
+      "required": [
+        "version",
+        "factors_active",
+        "factors_blank"
+      ],
       "additionalProperties": false,
       "properties": {
-        "version": { "type": "string", "description": "Semver. Bump on any scoring change." },
-        "factors_active": { "type": "integer", "minimum": 1 },
+        "version": {
+          "type": "string",
+          "description": "Semver. Bump on any scoring change."
+        },
+        "factors_active": {
+          "type": "integer",
+          "minimum": 1
+        },
         "factors_blank": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Factors with no source this card. Disclosed, not hidden."
         },
-        "weight_note": { "type": "string" }
+        "weight_note": {
+          "type": "string"
+        }
       }
     },
     "data_pull": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "source": { "type": "string", "enum": ["equibase_entries_plus", "equibase_data_api", "trackmaster", "brisnet"] },
-        "pulled_at": { "type": "string", "format": "date-time" },
+        "source": {
+          "type": "string",
+          "enum": [
+            "equibase_entries_plus",
+            "equibase_data_api",
+            "trackmaster",
+            "brisnet"
+          ]
+        },
+        "pulled_at": {
+          "type": "string",
+          "format": "date-time"
+        },
         "races_unavailable": {
           "type": "array",
-          "items": { "type": "integer" },
+          "items": {
+            "type": "integer"
+          },
           "description": "Races the pull failed on. Logged, never quietly dropped."
         }
       }
@@ -88,45 +179,122 @@
     "races": {
       "type": "array",
       "minItems": 1,
-      "items": { "$ref": "#/$defs/race" }
+      "items": {
+        "$ref": "#/$defs/race"
+      }
     },
     "tickets": {
       "type": "array",
-      "items": { "$ref": "#/$defs/ticket" }
+      "items": {
+        "$ref": "#/$defs/ticket"
+      }
     },
     "revisions": {
       "type": "array",
       "description": "Append-only. Late scratches and revised tickets. Originals above are never rewritten.",
-      "items": { "$ref": "#/$defs/revision" }
+      "items": {
+        "$ref": "#/$defs/revision"
+      }
+    },
+    "day_picks": {
+      "type": "object",
+      "description": "Card-level picks from the workbook SELECTIONS sheet header.",
+      "additionalProperties": false,
+      "properties": {
+        "best_bet": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "race": {
+              "type": "integer"
+            },
+            "program": {
+              "type": "string"
+            }
+          }
+        },
+        "longshot_of_day": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "race": {
+              "type": "integer"
+            },
+            "program": {
+              "type": "string"
+            }
+          }
+        }
+      }
     }
   },
   "$defs": {
     "race": {
       "type": "object",
-      "required": ["race_number", "post_time", "distance", "surface", "race_type", "field_size", "no_play", "confidence"],
+      "required": [
+        "race_number",
+        "post_time",
+        "distance",
+        "surface",
+        "race_type",
+        "field_size",
+        "no_play",
+        "confidence"
+      ],
       "additionalProperties": false,
       "properties": {
-        "race_number": { "type": "integer", "minimum": 1, "maximum": 14 },
-        "post_time": { "type": "string", "format": "date-time" },
-        "distance": { "type": "string", "description": "e.g. '6.5f', '1m70y'" },
-        "surface": { "type": "string", "enum": ["dirt", "turf", "synthetic", "off_turf"] },
-        "race_type": { "type": "string", "description": "e.g. 'Clm $15,700', 'Allowance', 'Maiden Special Weight'" },
-        "field_size": { "type": "integer", "minimum": 1, "description": "Runners actually going at publication." },
+        "race_number": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 14
+        },
+        "post_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "distance": {
+          "type": "string",
+          "description": "e.g. '6.5f', '1m70y'"
+        },
+        "surface": {
+          "type": "string",
+          "enum": [
+            "dirt",
+            "turf",
+            "synthetic",
+            "off_turf"
+          ]
+        },
+        "race_type": {
+          "type": "string",
+          "description": "e.g. 'Clm $15,700', 'Allowance', 'Maiden Special Weight'"
+        },
+        "field_size": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Runners actually going at publication."
+        },
         "scratches_known": {
           "type": "array",
-          "items": { "type": "integer" },
+          "items": {
+            "type": "integer"
+          },
           "description": "Program numbers already off at publication."
         },
         "no_play": {
           "type": "boolean",
-          "description": "True when the data cannot separate the field. Graded separately — never counted as a hit or a miss."
+          "description": "True when the data cannot separate the field. Graded separately \u2014 never counted as a hit or a miss."
         },
-        "no_play_reason": { "type": "string" },
+        "no_play_reason": {
+          "type": "string"
+        },
         "selections": {
           "type": "array",
           "maxItems": 3,
           "description": "Built for COVERAGE. Order inside the three carries no meaning and is not graded.",
-          "items": { "$ref": "#/$defs/selection" }
+          "items": {
+            "$ref": "#/$defs/selection"
+          }
         },
         "alternate": {
           "$ref": "#/$defs/alternate",
@@ -135,46 +303,104 @@
         "fades": {
           "type": "array",
           "description": "Step 8 reservation audit run on the FADE list. Any horse with a real case that was still left off.",
-          "items": { "$ref": "#/$defs/fade" }
+          "items": {
+            "$ref": "#/$defs/fade"
+          }
         },
         "confidence": {
           "type": "string",
-          "enum": ["single", "standard", "spread", "no_play"],
+          "enum": [
+            "single",
+            "standard",
+            "spread",
+            "no_play"
+          ],
           "description": "The primary segmentation key for the public record."
         },
         "scratch_risk": {
           "type": "string",
-          "enum": ["low", "medium", "high"],
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
           "default": "low"
         },
-        "scratch_risk_note": { "type": "string" },
+        "scratch_risk_note": {
+          "type": "string"
+        },
         "read_quality": {
           "type": "string",
-          "enum": ["strong", "adequate", "weak"],
+          "enum": [
+            "strong",
+            "adequate",
+            "weak"
+          ],
           "description": "Say plainly when a read is weak. Published, not buried."
         },
-        "summary": { "type": "string", "description": "The reasoning. Prose, subscriber-facing." }
+        "summary": {
+          "type": "string",
+          "description": "The reasoning. Prose, subscriber-facing."
+        },
+        "engine_output": {
+          "$ref": "#/$defs/engine_output"
+        }
       },
       "allOf": [
         {
-          "if": { "properties": { "no_play": { "const": false } } },
-          "then": { "required": ["selections", "alternate"] }
+          "if": {
+            "properties": {
+              "no_play": {
+                "const": false
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "selections",
+              "alternate"
+            ]
+          }
         },
         {
-          "if": { "properties": { "no_play": { "const": true } } },
-          "then": { "required": ["no_play_reason"] }
+          "if": {
+            "properties": {
+              "no_play": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "no_play_reason"
+            ]
+          }
         }
       ]
     },
     "selection": {
       "type": "object",
-      "required": ["program", "horse", "reservation"],
+      "required": [
+        "program",
+        "horse",
+        "reservation"
+      ],
       "additionalProperties": false,
       "properties": {
-        "program": { "type": "string", "description": "String, not integer — coupled entries are '1A', '2B'." },
-        "horse": { "type": "string" },
-        "morning_line": { "type": "string" },
-        "case": { "type": "string", "description": "Why he's in." },
+        "program": {
+          "type": "string",
+          "description": "String, not integer \u2014 coupled entries are '1A', '2B'."
+        },
+        "horse": {
+          "type": "string"
+        },
+        "morning_line": {
+          "type": "string"
+        },
+        "case": {
+          "type": "string",
+          "description": "Why he's in."
+        },
         "reservation": {
           "type": "string",
           "minLength": 1,
@@ -189,14 +415,31 @@
     },
     "alternate": {
       "type": "object",
-      "required": ["program", "horse", "reason", "left_off_because"],
+      "required": [
+        "program",
+        "horse",
+        "reason",
+        "left_off_because"
+      ],
       "additionalProperties": false,
       "properties": {
-        "program": { "type": "string" },
-        "horse": { "type": "string" },
-        "morning_line": { "type": "string" },
-        "reason": { "type": "string", "description": "The case FOR him." },
-        "left_off_because": { "type": "string", "description": "The case against. Both, always." },
+        "program": {
+          "type": "string"
+        },
+        "horse": {
+          "type": "string"
+        },
+        "morning_line": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "description": "The case FOR him."
+        },
+        "left_off_because": {
+          "type": "string",
+          "description": "The case against. Both, always."
+        },
         "near_coin_flip": {
           "type": "boolean",
           "default": false,
@@ -206,65 +449,213 @@
     },
     "fade": {
       "type": "object",
-      "required": ["program", "horse", "case_for", "why_still_off"],
+      "required": [
+        "program",
+        "horse",
+        "case_for",
+        "why_still_off"
+      ],
       "additionalProperties": false,
       "properties": {
-        "program": { "type": "string" },
-        "horse": { "type": "string" },
-        "morning_line": { "type": "string" },
-        "case_for": { "type": "string" },
-        "why_still_off": { "type": "string" }
+        "program": {
+          "type": "string"
+        },
+        "horse": {
+          "type": "string"
+        },
+        "morning_line": {
+          "type": "string"
+        },
+        "case_for": {
+          "type": "string"
+        },
+        "why_still_off": {
+          "type": "string"
+        }
       }
     },
     "ticket": {
       "type": "object",
-      "required": ["type", "races", "structure", "base", "cost"],
+      "required": [
+        "type",
+        "races",
+        "structure",
+        "base",
+        "cost"
+      ],
       "additionalProperties": false,
       "properties": {
-        "type": { "type": "string", "enum": ["pick3", "pick4", "pick5", "pick6"] },
+        "type": {
+          "type": "string",
+          "enum": [
+            "pick3",
+            "pick4",
+            "pick5",
+            "pick6"
+          ]
+        },
         "races": {
           "type": "array",
-          "items": { "type": "integer" },
+          "items": {
+            "type": "integer"
+          },
           "description": "Consecutive race numbers in the sequence."
         },
         "structure": {
           "type": "array",
           "items": {
             "type": "array",
-            "items": { "type": "string" }
+            "items": {
+              "type": "string"
+            }
           },
           "description": "Program numbers per leg, in race order. Length must equal races length."
         },
-        "base": { "type": "number", "description": "Base wager unit, e.g. 0.50, 1.00" },
-        "cost": { "type": "number", "description": "base * product of leg widths. Stated so it can be executed as written." },
-        "note": { "type": "string" }
+        "base": {
+          "type": "number",
+          "description": "Base wager unit, e.g. 0.50, 1.00"
+        },
+        "cost": {
+          "type": "number",
+          "description": "base * product of leg widths. Stated so it can be executed as written."
+        },
+        "note": {
+          "type": "string"
+        }
       }
     },
     "revision": {
       "type": "object",
-      "required": ["revised_at", "reason", "changes"],
+      "required": [
+        "revised_at",
+        "reason",
+        "changes"
+      ],
       "additionalProperties": false,
       "properties": {
-        "revised_at": { "type": "string", "format": "date-time" },
-        "reason": { "type": "string", "enum": ["scratch", "surface_change", "distance_change", "race_cancelled"] },
-        "detail": { "type": "string" },
+        "revised_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reason": {
+          "type": "string",
+          "enum": [
+            "scratch",
+            "surface_change",
+            "distance_change",
+            "race_cancelled"
+          ]
+        },
+        "detail": {
+          "type": "string"
+        },
         "changes": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["race_number"],
+            "required": [
+              "race_number"
+            ],
             "additionalProperties": false,
             "properties": {
-              "race_number": { "type": "integer" },
-              "scratched": { "type": "array", "items": { "type": "string" } },
-              "new_selections": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/selection" } },
-              "new_confidence": { "type": "string", "enum": ["single", "standard", "spread", "no_play"] },
-              "now_no_play": { "type": "boolean" },
-              "note": { "type": "string" }
+              "race_number": {
+                "type": "integer"
+              },
+              "scratched": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "new_selections": {
+                "type": "array",
+                "maxItems": 3,
+                "items": {
+                  "$ref": "#/$defs/selection"
+                }
+              },
+              "new_confidence": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "standard",
+                  "spread",
+                  "no_play"
+                ]
+              },
+              "now_no_play": {
+                "type": "boolean"
+              },
+              "note": {
+                "type": "string"
+              }
             }
           }
         },
-        "revised_tickets": { "type": "array", "items": { "$ref": "#/$defs/ticket" } }
+        "revised_tickets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ticket"
+          }
+        }
+      }
+    },
+    "engine_output": {
+      "type": "object",
+      "description": "Raw output of the scoring workbook for this race, before judgment. Recorded so the engine can be graded separately from the final selections.",
+      "additionalProperties": false,
+      "properties": {
+        "ranked": {
+          "type": "array",
+          "maxItems": 4,
+          "description": "Workbook rank order, 1st through 4th, with scores.",
+          "items": {
+            "type": "object",
+            "required": [
+              "rank",
+              "program"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "rank": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4
+              },
+              "program": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "longshot": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "program": {
+              "type": "string"
+            },
+            "score": {
+              "type": "number"
+            }
+          }
+        },
+        "top_class": {
+          "type": "string",
+          "description": "Program triplet, e.g. '3-7-1'. '--' when unsourced."
+        },
+        "top_power": {
+          "type": "string"
+        },
+        "top_pace": {
+          "type": "string"
+        },
+        "top_speed": {
+          "type": "string"
+        }
       }
     }
   }
