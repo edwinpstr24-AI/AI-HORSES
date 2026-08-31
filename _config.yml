@@ -1,0 +1,10 @@
+title: AI Horses
+description: Handicapping selections, published before post and graded in public.
+theme: jekyll-theme-minimal
+
+exclude:
+  - "*.py"
+  - "*.bat"
+  - SCHEMA
+  - TEMPLATE.json
+  - OUTPUT-FORMAT.md
