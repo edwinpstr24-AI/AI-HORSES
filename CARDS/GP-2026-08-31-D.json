@@ -1,0 +1,505 @@
+{
+  "card_id": "GP-2026-08-31-D",
+  "track": {
+    "code": "GP",
+    "name": "Gulfstream Park",
+    "country": "USA",
+    "configuration": {
+      "shape": "one-mile oval with Tapeta inner course and turf course",
+      "framework": "figure_dominated",
+      "note": "Gulfstream is a wide conventional mile oval, not a bullring. Final-time and pace figures carry the read; running style and post are secondary rather than decisive. No bias table with a disclosed sample was available, so no bias claim is made anywhere on this card."
+    }
+  },
+  "race_date": "2026-08-31",
+  "day_evening": "D",
+  "published_at": "2026-08-31T01:15:00Z",
+  "engine": {
+    "version": "0.9.0-preblank",
+    "factors_active": 17,
+    "factors_blank": [
+      "Top Power",
+      "Top Speed",
+      "Top Class",
+      "Top Pace",
+      "Key Ratings",
+      "Key Race Info"
+    ],
+    "weight_note": "Engine runs at roughly two-thirds designed weight with the six Top Ratings factors unsourced. Equibase Entries Plus does not publish them. Disclosed, not hidden."
+  },
+  "data_pull": {
+    "source": "equibase_entries_plus",
+    "pulled_at": "2026-08-31T01:05:00Z",
+    "races_unavailable": [6]
+  },
+  "races": [
+    {
+      "race_number": 1,
+      "post_time": "2026-08-31T16:20:00Z",
+      "distance": "1m70y",
+      "surface": "synthetic",
+      "race_type": "Maiden Claiming $12,500",
+      "field_size": 7,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "7",
+          "horse": "Veronika Z",
+          "morning_line": "3/5",
+          "case": "Dominant on every figure. Average speed figure 72 where nobody else exceeds 58, best figure 82, and the field's best early pace at 74. Nine of ten starts at this track, 23% jockey/trainer.",
+          "reservation": "Ten starts and still a maiden, which is why she is in a $12,500 claiming spot despite the figures. Thirty-six days off. At 3/5 there is no value - a coverage single, not a bet.",
+          "coverage_only": false
+        },
+        {
+          "program": "2",
+          "horse": "Not One Less",
+          "morning_line": "6/1",
+          "case": "Second-best figures at 58 average and 70 best, with 21 starts and 17 on this surface. The only runner within fourteen points of the favourite.",
+          "reservation": "Twenty-one starts without a win is chronic losing at level, not a class artifact. Early pace of 55 gives the favourite a nineteen-point head start."
+        },
+        {
+          "program": "1",
+          "horse": "Loyalist",
+          "morning_line": "10/1",
+          "case": "Four starts at today's exact distance with a 63 figure there, and all twelve career starts at this track.",
+          "reservation": "Average figure of 46 is twenty-six points behind the favourite and the jockey/trainer reads 5%. Depth, not a winner.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "5",
+        "horse": "Our Perfect Amanda",
+        "morning_line": "8/1",
+        "reason": "Freshest at nine days and the 33% jockey/trainer is the best among runners with form. Only five starts, so the ceiling is unestablished.",
+        "left_off_because": "No figure at today's distance at all, and her 46 average only ties Loyalist while giving up the distance experience.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "6",
+          "horse": "Chazzaprime",
+          "morning_line": "7/2",
+          "case_for": "Second choice on the morning line despite being a first-time starter, so the barn and the market expect something. A data hole on a horse the market likes has cost me winners before.",
+          "why_still_off": "This hole conceals nothing provable - absence of evidence, not concealed class. The 10% jockey/trainer gives no support. Weighting him up repeats the Now Or Nevermore error, not the Banishing one."
+        }
+      ],
+      "confidence": "single",
+      "scratch_risk": "low",
+      "read_quality": "strong",
+      "summary": "Cleanest read on the card. Veronika Z is fourteen to fifty-two points clear on average speed figure and also owns the best early pace. The three exist to survive her losing."
+    },
+    {
+      "race_number": 2,
+      "post_time": "2026-08-31T16:54:00Z",
+      "distance": "5.5f",
+      "surface": "synthetic",
+      "race_type": "Claiming $17,500 - $16,000",
+      "field_size": 7,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "5",
+          "horse": "Amande",
+          "morning_line": "7/2",
+          "case": "Co-best average figure at 73 and the field's best figures at distance, track and surface, all 86. Won last out. 25% overall and 25% at this track, 23% jockey/trainer. The only runner leading on both speed and form.",
+          "reservation": "Only eight career starts, so the 86 has been run once rather than repeatedly. Thirty-six days off, and 14% on surface is the softest number on her line."
+        },
+        {
+          "program": "6",
+          "horse": "Blond Jak",
+          "morning_line": "2/1",
+          "case": "Second last out, most experienced here with nineteen starts and eighteen on this surface. Best figure at distance 82, 22% jockey/trainer, thirty-day turnaround.",
+          "reservation": "Three wins from nineteen at a level he has run repeatedly - chronic seconds AT level, the real-warning version rather than the class artifact. Zero wins from six at today's distance."
+        },
+        {
+          "program": "4",
+          "horse": "Unshakable",
+          "morning_line": "9/2",
+          "case": "Ties Amande on average figure at 73 and best at 86, and owns the field's best win rate at today's distance at 29%. Highest career earnings at $125,640.",
+          "reservation": "Seventh last out, fifty-nine days off - longest layoff in the field - and a 0% jockey/trainer. The figures are real; form and connections are not supporting them."
+        }
+      ],
+      "alternate": {
+        "program": "7",
+        "horse": "Zolene",
+        "morning_line": "3/1",
+        "reason": "Field's best early pace at 75, freshest at eight days, 22% win rate from nine starts. Early speed matters in a synthetic sprint.",
+        "left_off_because": "Average figure of 61 is twelve points behind the top three and her best at today's distance is 63, twenty-three points off Amande.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "1",
+          "horse": "Musical Power",
+          "morning_line": "10/1",
+          "case_for": "The 50% jockey/trainer is the highest number on the card, with a 77 best figure and 40% at this track.",
+          "why_still_off": "Average figure of 48 is twenty-five points behind and he was seventh last out. The connections stat sits on a small sample; the figure gap does not."
+        },
+        {
+          "program": "3",
+          "horse": "Zealot",
+          "morning_line": "10/1",
+          "case_for": "Best win rate in the race at 33% from six starts and 50% on this surface. A lightly raced improver is the shape that beats you.",
+          "why_still_off": "Average 57, best 75 - sixteen points behind on six starts of evidence, with a 0% jockey/trainer."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "A genuine three-horse race. Amande leads on both figures and form. Blond Jak is the market choice but his win pattern is the chronic-second shape at level. Unshakable matches the figures and fails on form, layoff and connections."
+    },
+    {
+      "race_number": 3,
+      "post_time": "2026-08-31T17:24:00Z",
+      "distance": "6f",
+      "surface": "dirt",
+      "race_type": "Maiden Special Weight $65,000 (FL-bred 2yo fillies)",
+      "field_size": 6,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "5",
+          "horse": "Whole Lotta Rosie",
+          "morning_line": "3/1",
+          "case": "Three starts, the most experience in the race, and third last out. The dam Shotdowninflames also produced Tessellate, a filly with a 96 speed figure, four wins from nine and stakes placings at two - a proven producer of precocious sprinting fillies. Champion Equine ownership, Braddy barn.",
+          "reservation": "Jockey/trainer combination reads 0%, and three starts without a win at this level. She is the most exposed runner in a race where the unexposed ones may simply be better."
+        },
+        {
+          "program": "1",
+          "horse": "High Magic",
+          "morning_line": "9/5",
+          "case": "Market choice and the best jockey/trainer stat in the race at 30%. Victor Barboza Jr is among the most effective trainers on this circuit, and a homebred debuting as favourite from the rail with those connections is the classic live first-timer profile. Bernardini on the bottom adds class.",
+          "reservation": "First-time starter with nothing measurable. Magic On Tap is a modest Florida sire, so this is connections and market money rather than pedigree."
+        },
+        {
+          "program": "3",
+          "horse": "St Margaret's Bay",
+          "morning_line": "12/1",
+          "case": "The equipment play. Only equipment change in the race - blinkers on - for a filly who was third in her only start and returns in just fifteen days, the fastest turnaround here. Jockey/trainer 29%, second best in the field.",
+          "reservation": "One start, 12/1 for a reason, and a small operation where owner, breeder and trainer are the same family. Blinkers first time can as easily rush a two-year-old as focus her."
+        }
+      ],
+      "alternate": {
+        "program": "2",
+        "horse": "Playoff",
+        "morning_line": "5/2",
+        "reason": "Bred by Ocala Stud, a serious Florida nursery, and second choice at 5/2 as a first-time starter. Tiznow on the bottom.",
+        "left_off_because": "Jockey/trainer combination is 8%, second worst in the race. The market likes her considerably more than the connections numbers justify.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "4",
+          "horse": "Shelby Coupe",
+          "morning_line": "6/1",
+          "case_for": "Three starts of experience, a Roadster filly like half this field, and DJ Stable breeding.",
+          "why_still_off": "Same barn and owner as Playoff, and the stable's other runner is 5/2 while she is 6/1 - the money says which one they are behind. Sixth last out with a 0% jockey/trainer."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "low",
+      "read_quality": "weak",
+      "summary": "No speed figures exist for this race at all. The ranking rests on one dam relationship, one equipment change, two connections percentages and the morning line - four inputs against the seventeen the engine normally uses. Three of the six are by Roadster, which flattens pedigree as a separator. Defensible but not measured; use four horses rather than three if this is a multi-race leg."
+    },
+    {
+      "race_number": 4,
+      "post_time": "2026-08-31T17:54:00Z",
+      "distance": "1 1/16m",
+      "surface": "turf",
+      "race_type": "Starter Optional Claiming $50,000 - $35,000",
+      "field_size": 8,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "6",
+          "horse": "Bail Us Out",
+          "morning_line": "2/1",
+          "case": "Co-best average figure at 92 and the field's best on surface at 103. Won last out. 25% at today's distance, 40% at this track, 33% on turf, 28% jockey/trainer. Highest earnings per start at $13,156.",
+          "reservation": "Only five starts at this track and six on turf, so the sample behind those percentages is thin. Fourteen career starts against rivals with twenty-three and thirty."
+        },
+        {
+          "program": "1",
+          "horse": "Jayhawk",
+          "morning_line": "5/1",
+          "case": "Won last out and owns the field's best win rates almost everywhere - 44% overall, 57% on surface, 57% at track, 30% at distance, seven wins from sixteen. Best at distance 101, earnings per start $13,641.",
+          "reservation": "The jockey/trainer reads 0%, the worst on any of my three. Average figure of 87 sits five points behind the top pair, and forty-two days off."
+        },
+        {
+          "program": "7",
+          "horse": "Degree of Risk",
+          "morning_line": "5/2",
+          "case": "Field's best figures outright - 105 best, 105 at distance, 105 on surface - highest career earnings at $384,345, thirty starts of evidence, ten at the distance and twenty-four on turf.",
+          "reservation": "Sixth last out and off 129 days. Win rate of just 10% overall and 8% on surface across thirty starts - the figures say elite, the win column says otherwise."
+        }
+      ],
+      "alternate": {
+        "program": "2",
+        "horse": "Tee At One",
+        "morning_line": "9/2",
+        "reason": "Third last out, 18% jockey/trainer, best at distance 98 and fifteen turf starts with a consistent 85 average.",
+        "left_off_because": "Seven points behind the leaders on average figure with a 13% strike rate on turf, and forty-two days off.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "3",
+          "horse": "Goldentown",
+          "morning_line": "15/1",
+          "case_for": "A 100% jockey/trainer combination and a 111 best speed figure, the highest raw number anywhere in this race.",
+          "why_still_off": "The 111 was earned off this surface - his best on turf is 90 and his average is 77, lowest of the contenders. Zero wins from one at the distance, 0% on turf. The 100% stat is a one-for-one sample."
+        },
+        {
+          "program": "4",
+          "horse": "Brawn",
+          "morning_line": "12/1",
+          "case_for": "Field's best early pace at 84, a 101 best figure, twenty-three starts at this track, 50% jockey/trainer.",
+          "why_still_off": "Off 128 days, sixth last out, 0% at today's distance from seven and 0% on turf from eleven. The pace figure is real but nothing else supports it."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "The deepest race on the card. Bail Us Out and Degree of Risk tie on average figure at 92, but Degree of Risk has the better raw numbers and much the worse win pattern - 10% from thirty starts with a 129-day layoff. Jayhawk wins at an extraordinary rate on this surface and has the worst connections stat. Three genuine cases, none clean."
+    },
+    {
+      "race_number": 5,
+      "post_time": "2026-08-31T18:30:00Z",
+      "distance": "6f",
+      "surface": "dirt",
+      "race_type": "Maiden Special Weight $65,000",
+      "field_size": 7,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "5",
+          "horse": "King Henry",
+          "morning_line": "5/2",
+          "case": "Best speed figure in the race at 68 and joint-best early pace at 77, from his single start. Third last out, 15% jockey/trainer.",
+          "reservation": "One career start and seventy-two days off - the longest layoff among runners with form. A one-start sample is the thinnest possible evidence for a top selection."
+        },
+        {
+          "program": "4",
+          "horse": "Sir Angelus",
+          "morning_line": "4/1",
+          "case": "65 figure and a 77 early pace from one start, fourth last out twenty-two days back. Matches King Henry on pace, three points back on figure.",
+          "reservation": "Also a single start, and the jockey/trainer reads 0%. Nothing here beyond one race."
+        },
+        {
+          "program": "7",
+          "horse": "Mane Affair",
+          "morning_line": "3/1",
+          "case": "First-time starter with the field's best jockey/trainer at 27% and market support at 3/1. Where three of seven have never run, connections are the only signal.",
+          "reservation": "No figures, no pace, no starts. A connections-and-market play with nothing measurable behind it, in the three because the alternatives are one-start horses.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "3",
+        "horse": "Etruscan Warrior",
+        "morning_line": "9/2",
+        "reason": "Most experienced with three starts, a 65 best figure and 55 average, highest earnings among the runners at $15,650.",
+        "left_off_because": "Early pace of 45 is the worst of any runner with form, thirty-two points behind King Henry. In a six-furlong dirt sprint that is close to disqualifying.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "2",
+          "horse": "Slew de Oro",
+          "morning_line": "15/1",
+          "case_for": "Early pace of 76 is nearly the best in the race and the jockey/trainer reads 30%, second highest.",
+          "why_still_off": "Average 52 and best 56 are the lowest of any runner with form, and he was sixth last out."
+        },
+        {
+          "program": "1",
+          "horse": "Stir Flay",
+          "morning_line": "6/1",
+          "case_for": "First-time starter with an 18% jockey/trainer and reasonable market support.",
+          "why_still_off": "No data at all, and the connections number is well behind Mane Affair's 27%. If a debutante goes in, it is the better-supported one."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "low",
+      "read_quality": "weak",
+      "summary": "Three first-time starters and four horses with one to three starts between them. The figures that exist come from single races, so the separation rests on almost nothing."
+    },
+    {
+      "race_number": 6,
+      "post_time": "2026-08-31T19:00:00Z",
+      "distance": "1m",
+      "surface": "turf",
+      "race_type": "Claiming $17,500 - $16,000",
+      "field_size": 10,
+      "no_play": true,
+      "no_play_reason": "Entries Plus refused to return the speed figure, pace and surface columns for this race across four separate attempts, while every other race on the card released them. Only wins, starts, earnings, win percentage, days off and last finish were available - two usable factors out of seventeen. Ten runners with win rates clustered between 11% and 30% cannot be separated on that. Logged as a data failure, not a judgement that the field is inseparable. For reference the two-factor read would have been 5 Act a Fool (30% win rate and $9,242 earnings per start, both best in the race), 8 Brother Brad (eight wins, most in the field) and 2 Dimanche Gras (won last out), but that is a guess dressed as a selection and is deliberately not published as one.",
+      "confidence": "no_play",
+      "read_quality": "weak"
+    },
+    {
+      "race_number": 7,
+      "post_time": "2026-08-31T19:30:00Z",
+      "distance": "1m",
+      "surface": "dirt",
+      "race_type": "Maiden Special Weight $68,000",
+      "field_size": 6,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "2",
+          "horse": "Gregarious",
+          "morning_line": "5/2",
+          "case": "Field's best early pace figure at 89 - seventeen points clear of anything else - and the best average speed figure at 72. Second last out. In a one-turn mile that pace advantage is decisive.",
+          "reservation": "Off 191 days, by far the longest layoff in the field, and only one career start. Everything rests on a single race run more than six months ago."
+        },
+        {
+          "program": "5",
+          "horse": "Valen Time",
+          "morning_line": "4/1",
+          "case": "Field's best speed figure at 79, and best at distance and at track also 79. Seven starts at this track, the most experience of any live runner. Second last out, thirty-five days back.",
+          "reservation": "Average figure of 53 is the lowest of the contenders - the 79 is a peak he has not repeated. Jockey/trainer reads 14%."
+        },
+        {
+          "program": "6",
+          "horse": "Mediterranean Sea",
+          "morning_line": "7/5",
+          "case": "Market favourite with a 27% jockey/trainer, a 70 figure from his only start and third last out. Second-best average figure at 70.",
+          "reservation": "One start, no figure at today's distance, and an early pace of 69 leaving him twenty points behind Gregarious. Favoured on connections rather than demonstrated ability."
+        }
+      ],
+      "alternate": {
+        "program": "1",
+        "horse": "Marilyn's Mate",
+        "morning_line": "6/1",
+        "reason": "Field's best jockey/trainer at 50%, third last out, and a 71 figure at today's distance from two starts.",
+        "left_off_because": "Average 57 and early pace 55, thirty-four points behind Gregarious. The connections stat is the only strong number on his line.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "4",
+          "horse": "Salt of the Earth",
+          "morning_line": "9/2",
+          "case_for": "A 72 best figure matching the top of the field and a 26% jockey/trainer.",
+          "why_still_off": "Sixth last out, zero starts on dirt despite three career runs, and no figure on this surface at all. Earnings per start of $770 is the lowest in the race."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "Gregarious owns a seventeen-point early pace advantage in a one-turn mile, the single most usable edge on this card. The 191-day layoff is why he is 5/2 rather than odds-on, and it is a real reservation, but the pace figure is not close."
+    },
+    {
+      "race_number": 8,
+      "post_time": "2026-08-31T20:00:00Z",
+      "distance": "1m",
+      "surface": "dirt",
+      "race_type": "Claiming $6,250",
+      "field_size": 10,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "7",
+          "horse": "Copperlite",
+          "morning_line": "8/5",
+          "case": "Field's best speed figure at 104 and best on surface at 104, with a 31% win rate, 50% at this track and 29% on surface. The 43% jockey/trainer is the highest in the race and earnings per start of $7,411 leads the field.",
+          "reservation": "Off 432 days - a fourteen-month layoff, by an enormous margin the longest on the card. Sixth last out. Every number is excellent and every one is more than a year old."
+        },
+        {
+          "program": "1",
+          "horse": "Blue Slide Park",
+          "morning_line": "10/1",
+          "case": "Co-best average figure at 78 with a 93 best, 93 at distance and 93 at track. Eleven starts at today's distance and twenty-two at this track, 18% at the distance.",
+          "reservation": "Off 121 days and the jockey/trainer reads 0%. Fifth last out."
+        },
+        {
+          "program": "5",
+          "horse": "The Thor (CHI)",
+          "morning_line": "9/2",
+          "case": "Co-best average figure at 78 with a 95 best - second-highest raw figure in the race - and thirty-eight of thirty-nine starts on this surface. Six career wins, second-most in the field.",
+          "reservation": "Eighth last out and an early pace figure of 16, which is not a typo and is sixty-two points behind the field leader. Zero wins from ten starts at this track."
+        }
+      ],
+      "alternate": {
+        "program": "6",
+        "horse": "Jades Jay",
+        "morning_line": "8/1",
+        "reason": "Field's best early pace at 78, a 93 best figure, 33% at today's distance, five career wins, and freshest in the race at seven days.",
+        "left_off_because": "Average figure of 68 is ten points behind the leaders, 0% jockey/trainer, and 9% at this track from eleven starts.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "3",
+          "horse": "Antillean",
+          "morning_line": "20/1",
+          "case_for": "Forty-nine starts at this track and twenty-nine at the distance - the most course-and-distance experience on the card - with a 25% jockey/trainer.",
+          "why_still_off": "Average figure of 57, twenty-one points behind, and a 6% win rate from forty-nine starts. Experience without ability."
+        },
+        {
+          "program": "10",
+          "horse": "Dime Papi",
+          "morning_line": "10/1",
+          "case_for": "A 30% jockey/trainer, fourth last out and a 90 best figure with nineteen starts at this track.",
+          "why_still_off": "73 average sits five points behind the leaders with a 16% strike rate. Nothing wrong with him, just outranked."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "Copperlite has the best figures and the best connections in the race and has not run in fourteen months. That is the whole question. He is on top because the numbers are that far clear, and flagged spread because a 432-day layoff at $6,250 claiming is exactly the kind of hole that swallows a favourite."
+    },
+    {
+      "race_number": 9,
+      "post_time": "2026-08-31T20:30:00Z",
+      "distance": "5f",
+      "surface": "turf",
+      "race_type": "Allowance Optional Claiming $25,000",
+      "field_size": 9,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "1",
+          "horse": "Royally Blue",
+          "morning_line": "5/1",
+          "case": "Best average figure at 75, best raw figure at 92 and best at track at 92. Thirty starts with fifteen at today's distance, 33% at the distance and 32% at this track, eight career wins. Third last out, twenty-eight days back.",
+          "reservation": "Early pace of 62 is nineteen points behind the leaders, and in a five-furlong turf dash that is a real problem. Only 17% on turf from six starts, and an 11% jockey/trainer."
+        },
+        {
+          "program": "5",
+          "horse": "Laila Bella Girl",
+          "morning_line": "7/2",
+          "case": "Joint-best early pace at 81, which at five furlongs on grass is the factor that matters most. The 40% jockey/trainer is the highest in the race, ten starts at the distance, 29% on turf, and fresh at twenty-eight days.",
+          "reservation": "A 12% overall win rate is the lowest among the three, and her 69 average figure sits six points behind Royally Blue."
+        },
+        {
+          "program": "2",
+          "horse": "Happy Ride",
+          "morning_line": "9/2",
+          "case": "Field's best figures at distance at 91 and on surface at 90, with a 50% win rate at today's distance and nine career wins from thirty-six starts - the deepest record here. 24% jockey/trainer.",
+          "reservation": "Sixty-six days off, the longest among the live runners, and 13% on turf despite eight starts on the surface."
+        }
+      ],
+      "alternate": {
+        "program": "6",
+        "horse": "Neodera",
+        "morning_line": "3/1",
+        "reason": "Won last out and reads 33% overall, 33% at distance, 33% at track and 33% jockey/trainer, with a 75 early pace figure.",
+        "left_off_because": "Her surface record is a single start, so the 100% on turf is a one-for-one sample rather than evidence.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "7",
+          "horse": "Sophistry",
+          "morning_line": "30/1",
+          "case_for": "Ties for the best early pace in the race at 81 with ten starts at today's distance, which at 30/1 is genuinely tempting in a five-furlong turf sprint.",
+          "why_still_off": "Jockey/trainer reads 0% and she was sixth last out. The pace figure is real; nothing else on the line supports it."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "Four horses have a legitimate claim and the pace and figure factors run directly against each other - Royally Blue leads on figures and trails on pace, Laila Bella Girl is the exact reverse. At five furlongs on turf the pace side usually wins that argument, which is why the gap between the top two is narrow rather than decisive."
+    }
+  ],
+  "tickets": [],
+  "revisions": []
+}
