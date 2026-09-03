@@ -13,37 +13,16 @@ meaning and is not graded.
 No-play races are excluded from the rate entirely. Declining to play is a 
 decision, not an absence, and it is recorded as one.
 
-*Rebuilt 2026-08-31 02:14 UTC from 1 graded card(s).*
-
-## Overall
-
-| | |
-|---|---|
-| Cards graded | 1 |
-| Races played | 2 |
-| No-play races | 0 |
-| **Winner in top 3** | **2/2 = 100.0%** |
-| Named alternate won | 0 |
-
-## By confidence tier
-
-If `single` does not outperform `spread` over a real sample, the tiers 
-are decoration and this table is where that shows up.
-
-| Tier | Played | Hits | Rate |
-|---|---|---|---|
-| single | 1 | 1 | 100.0% |
-| spread | 1 | 1 | 100.0% |
-
-## Card by card
-
-| Card | Played | Hits | Rate | No-play |
-|---|---|---|---|---|
-| [CT-2026-08-29-E](CARDS-VIEW/CT-2026-08-29-E.md) | 2 | 2 | 100.0% | 0 |
+*Rebuilt 2026-09-03 00:41 UTC from 0 graded card(s).*
 
 ## Published, not yet graded
 
 - [GP-2026-08-31-D](CARDS-VIEW/GP-2026-08-31-D.md)
+- [SAR-2026-09-03-D](CARDS-VIEW/SAR-2026-09-03-D.md)
+
+## Record
+
+No cards graded yet. The first graded card populates this section.
 
 ---
 
