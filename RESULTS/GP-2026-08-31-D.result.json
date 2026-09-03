@@ -1,0 +1,119 @@
+{
+  "card_id": "GP-2026-08-31-D",
+  "graded_at": "2026-09-03T01:26:59+00:00",
+  "source": "equibase_official_chart",
+  "races": [
+    {
+      "race_number": 1,
+      "winner_program": "7",
+      "outcome": "hit",
+      "confidence_at_publication": "single",
+      "revision_applied": false,
+      "winner_horse": "Veronika Z",
+      "win_payoff": 2.6,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 2,
+      "winner_program": "5",
+      "outcome": "hit",
+      "confidence_at_publication": "standard",
+      "revision_applied": false,
+      "winner_horse": "Amande",
+      "win_payoff": 3.8,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 3,
+      "winner_program": "4",
+      "outcome": "miss",
+      "confidence_at_publication": "spread",
+      "revision_applied": false,
+      "winner_horse": "Shelby Coupe",
+      "win_payoff": 14.8,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 4,
+      "winner_program": "6",
+      "outcome": "hit",
+      "confidence_at_publication": "spread",
+      "revision_applied": false,
+      "winner_horse": "Bail Us Out",
+      "win_payoff": 4.2,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 5,
+      "winner_program": "4",
+      "outcome": "hit",
+      "confidence_at_publication": "spread",
+      "revision_applied": false,
+      "winner_horse": "Sir Angelus",
+      "win_payoff": 4.0,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 6,
+      "outcome": "no_play",
+      "confidence_at_publication": "no_play",
+      "revision_applied": false,
+      "note": "Entries Plus refused to return the speed figure, pace and surface columns for this race across four separate attempts, while every other race on the card released them. Only wins, starts, earnings, win percentage, days off and last finish were available - two usable factors out of seventeen. Ten runners with win rates clustered between 11% and 30% cannot be separated on that. Logged as a data failure, not a judgement that the field is inseparable. For reference the two-factor read would have been 5 Act a Fool (30% win rate and $9,242 earnings per start, both best in the race), 8 Brother Brad (eight wins, most in the field) and 2 Dimanche Gras (won last out), but that is a guess dressed as a selection and is deliberately not published as one."
+    },
+    {
+      "race_number": 7,
+      "winner_program": "2",
+      "outcome": "hit",
+      "confidence_at_publication": "standard",
+      "revision_applied": false,
+      "winner_horse": "Gregarious",
+      "win_payoff": 13.0,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 8,
+      "winner_program": "1",
+      "outcome": "hit",
+      "confidence_at_publication": "spread",
+      "revision_applied": false,
+      "winner_horse": "Blue Slide Park",
+      "win_payoff": 11.2,
+      "engine_outcome": "no_engine_data"
+    },
+    {
+      "race_number": 9,
+      "winner_program": "6",
+      "outcome": "alternate_won",
+      "confidence_at_publication": "spread",
+      "revision_applied": false,
+      "winner_horse": "Neodera",
+      "win_payoff": 4.8,
+      "engine_outcome": "no_engine_data"
+    }
+  ],
+  "totals": {
+    "races_carded": 9,
+    "races_played": 8,
+    "no_plays": 1,
+    "hits": 6,
+    "coverage_rate": 0.75,
+    "alternate_wins": 1,
+    "by_confidence": {
+      "single": {
+        "played": 1,
+        "hits": 1,
+        "rate": 1.0
+      },
+      "standard": {
+        "played": 2,
+        "hits": 2,
+        "rate": 1.0
+      },
+      "spread": {
+        "played": 5,
+        "hits": 3,
+        "rate": 0.6
+      }
+    }
+  }
+}
