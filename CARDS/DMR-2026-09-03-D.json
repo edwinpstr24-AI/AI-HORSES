@@ -1,0 +1,603 @@
+{
+  "card_id": "DMR-2026-09-03-D",
+  "track": {
+    "code": "DMR",
+    "name": "Del Mar",
+    "country": "USA",
+    "configuration": {
+      "shape": "one-mile dirt oval with a seven-eighths-mile turf course, turf rail at 30 feet",
+      "framework": "figure_dominated",
+      "note": "Del Mar is a galloping one-mile main track, not a bullring, so speed figures carry the weight rather than early position. The exception is the two five-furlong turf sprints out of the chute, where the run to the turn is short enough that early pace figures were promoted. Turf rail is out 30 feet on all four grass races, which lengthens the trip and reduces any inside advantage."
+    }
+  },
+  "race_date": "2026-09-03",
+  "day_evening": "D",
+  "published_at": "2026-09-03T01:30:00Z",
+  "engine": {
+    "version": "0.9.0-preblank",
+    "factors_active": 17,
+    "factors_blank": [
+      "Top Power",
+      "Top Speed",
+      "Top Class",
+      "Top Pace",
+      "Key Ratings",
+      "Key Race Info"
+    ],
+    "weight_note": "Engine runs at roughly two-thirds designed weight with Top Ratings unsourced. Disclosed, not hidden. Engine scores not yet run for this card - engine_output omitted rather than estimated."
+  },
+  "data_pull": {
+    "source": "equibase_entries_plus",
+    "pulled_at": "2026-09-03T01:01:00Z",
+    "races_unavailable": []
+  },
+  "races": [
+    {
+      "race_number": 1,
+      "post_time": "2026-09-03T21:00:00Z",
+      "distance": "5f",
+      "surface": "turf",
+      "race_type": "Allowance Optional Claiming $100,000",
+      "field_size": 5,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "4",
+          "horse": "Bit's Tiger Magic",
+          "morning_line": "8/5",
+          "case": "Wins at 56 percent lifetime, 67 percent at Del Mar and 67 percent at five furlongs. Earnings per start of 29,181 is more than double anyone else in the race. Won last out 21 days ago and holds the second-best early pace figure at 88.",
+          "reservation": "Her top speed figure of 103 is the lowest of the four credible runners. She is 8/5 on a five-horse field, so there is no price cushion if the race goes wrong.",
+          "coverage_only": false
+        },
+        {
+          "program": "2",
+          "horse": "Tahini",
+          "morning_line": "5/2",
+          "case": "Best speed figure at the distance in the field at 105, 40 percent at Del Mar off five starts, 33 percent at five furlongs, fastest early pace figure at 91, and the best jockey/trainer combination in the race at 28 percent.",
+          "reservation": "Average speed figure of 87 is the second-lowest in the field, and she is 40 days between starts."
+        },
+        {
+          "program": "3",
+          "horse": "Saratoga Special (IRE)",
+          "morning_line": "3/1",
+          "case": "Highest average speed figure in the race at 100 and highest top figure at 110, with two wins from eleven at five furlongs.",
+          "reservation": "Early pace figure of 28 against a field running 76 to 91 is the largest single outlier on the card. She gives up ground she cannot get back in a five-furlong chute sprint. She is 0 for 1 at Del Mar and the jockey/trainer combination is 0 percent.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "5",
+        "horse": "Certitude (FR)",
+        "morning_line": "3/1",
+        "reason": "Wins at 24 percent, holds a 107 top figure and has won at this distance, hitting 33 percent from three tries.",
+        "left_off_because": "Her best figure at five furlongs is only 100, seven points below her top, which says the 107 came at longer. Jockey/trainer combination is 0 percent and she is 40 days off.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "1",
+          "horse": "Visually",
+          "morning_line": "15/1",
+          "case_for": "Her 104 best figure at the distance matches the top of the field, she comes from the same barn as the favorite, and 15/1 is a genuine price on a horse with a 104 in her.",
+          "why_still_off": "She is 0 for 5 at Del Mar and 0 for 4 at five furlongs across 22 career starts with a 9 percent win rate. The figure exists but has never converted at this track or this trip."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "low",
+      "read_quality": "strong",
+      "summary": "Five-horse field, and the profile horse is obvious. Bit's Tiger Magic wins at 56 percent, wins at this track and this trip at 67 percent, and earns nearly three times the field average per start. Tahini has the fastest figure at the distance and the fastest early pace, which in a five-furlong chute sprint is worth more than it would be around two turns. Saratoga Special is the raw figure horse at a 100 average against a field in the high 80s, but her early pace figure of 28 is a 50-point gap to the leaders and in a short sprint that is usually fatal. She is in for coverage only. If the ticket needs trimming, Bit's Tiger Magic is the closest thing to a single on the card."
+    },
+    {
+      "race_number": 2,
+      "post_time": "2026-09-03T21:34:00Z",
+      "distance": "1m",
+      "surface": "dirt",
+      "race_type": "Claiming $12,500",
+      "field_size": 9,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "8",
+          "horse": "Sugar Reign",
+          "morning_line": "5/2",
+          "case": "Highest average speed figure in the field at 74, best figure at the distance at 81, 50 percent at Del Mar and 50 percent on dirt, and the freshest of the contenders at 14 days.",
+          "reservation": "Finished sixth last out, which is the worst recent form of anyone I am using. Jockey/trainer combination is only 8 percent."
+        },
+        {
+          "program": "6",
+          "horse": "Sugaree",
+          "morning_line": "10/1",
+          "case": "Earnings per start of 6,841 and lifetime earnings of 75,253 are both nearly double the field. That is proven class dropping into a 12,500 claimer. Ran second last out and comes back in 12 days.",
+          "reservation": "Zero starts at a mile, so the distance is a projection. Her raw figures are modest at a 54 average, and the jockey/trainer combination is 0 percent."
+        },
+        {
+          "program": "2",
+          "horse": "Good Golly Dolly",
+          "morning_line": "5/1",
+          "case": "Lightly raced three-year-old filly at eight starts getting four pounds from the older mares, 25 percent at the distance, third last out, and Rosario rides.",
+          "reservation": "Top figure of 74 is the lowest ceiling of anyone I am using, and she is 0 for 1 at Del Mar with a 0 percent jockey/trainer combination.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "5",
+        "horse": "Dats Ms. Blame",
+        "morning_line": "5/1",
+        "reason": "Ties for the field's best speed figure at 84, owns the best dirt figure at 81, and has the second-fastest early pace figure at 75.",
+        "left_off_because": "She is 0 for 6 at a mile and her best figure at the distance is 74, a full ten points below her top. Six failed attempts at the trip is a pattern, not bad luck.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "1",
+          "horse": "Union Heiress",
+          "morning_line": "20/1",
+          "case_for": "She owns the field's best speed figure at 84, and it is simultaneously her best at the distance and her best at Del Mar. She has won here, hitting 25 percent from four tries. At 20/1 that is the price play in the race.",
+          "why_still_off": "Her career average is 59 against that 84, so the top figure is a single unrepeated effort spread across 26 starts with one win. There is no class drop to explain it away, which by Step 9 makes this a chronic warning rather than a class artifact."
+        },
+        {
+          "program": "3",
+          "horse": "Rich of Joy",
+          "morning_line": "8/1",
+          "case_for": "An 81 at Del Mar and an 81 at the distance are the second-best numbers in the race behind Union Heiress, and she comes back in 12 days.",
+          "why_still_off": "Her best figure on dirt is only 70. The 81 at Del Mar was earned on the turf course, so the number that makes her look live does not apply to a dirt mile. She is also 0 for 5 at this track and 0 for 3 on dirt."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "Nine cheap fillies and mares and nothing separates cleanly. Sugar Reign has the best average figure and the best number at the trip but ran sixth last out. Sugaree is the concealed-class play - her figures look ordinary because she has been beaten by much better horses, and the earnings per start is the tell. The third slot is genuinely close between Good Golly Dolly, Dats Ms. Blame and Bitter Truth, and I took the lightly raced three-year-old with the weight break and the best rider. Rich of Joy is the trap here: her two best numbers were run on grass, not dirt, and the raw column will not tell you that."
+    },
+    {
+      "race_number": 3,
+      "post_time": "2026-09-03T22:07:00Z",
+      "distance": "1m",
+      "surface": "dirt",
+      "race_type": "Maiden Claiming $12,500",
+      "field_size": 10,
+      "scratches_known": [
+        1
+      ],
+      "no_play": false,
+      "selections": [
+        {
+          "program": "9",
+          "horse": "Wasting Aces",
+          "morning_line": "4/1",
+          "case": "Highest top figure in the race at 87 and he earned it at Del Mar. Nine of his twelve starts have been at a mile, he ran second last out, and his 26,200 in earnings is two and a half times anyone else here.",
+          "reservation": "Twelve starts and still a maiden. He is dropping into 12,500 maiden claiming, which reads as a class artifact rather than a chronic warning, but the horse still has to actually finish it off."
+        },
+        {
+          "program": "4",
+          "horse": "Farmer Tom",
+          "morning_line": "7/2",
+          "case": "A 73 at the distance ties for second-best in the field, he ran third last out which is the best recent finish behind Wasting Aces, four of six starts have been at a mile, and his earnings per start is second in the race.",
+          "reservation": "Early pace figure of 44 is near the bottom of the field, and his best figure at Del Mar is only 57 against a 73 top."
+        },
+        {
+          "program": "10",
+          "horse": "Dazzle Comm",
+          "morning_line": "3/1",
+          "case": "Only three starts with a 76 top figure and a 65 average, fourth last out, and the market makes him the second choice at 3/1.",
+          "reservation": "His figure at Del Mar and at a mile is 56, twenty points below his top. Every number that makes him look fast was run somewhere else.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "2",
+        "horse": "Halninethousand",
+        "morning_line": "8/1",
+        "reason": "Third-best average figure in the field at 66 and a 73 at the distance that matches Farmer Tom's best, at 8/1 against horses at 3/1 and 7/2 with worse Del Mar numbers.",
+        "left_off_because": "His best figure at Del Mar is 50, twenty-three points under his top, and he finished sixth last out.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "7",
+          "horse": "Its the Bandit",
+          "morning_line": "10/1",
+          "case_for": "Fastest early pace figure in the field at 81, ten points clear of the next horse, in a race where nobody else is committed to the lead. A loose front-runner at a mile in a California-bred maiden claimer wins this kind of race regularly.",
+          "why_still_off": "His top figure of 63 is 24 points below Wasting Aces and he finished eleventh last out. He is the pace, not the winner, and the pace scenario alone is not enough to override that gap."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "medium",
+      "scratch_risk_note": "Charmz Away is already scratched. Three also-eligibles are waiting: Zenjin, Low Tox and Rand Good. Low Tox is the one that matters - a 68 at Del Mar, a 75 early pace figure and a third last out. If he draws in he goes straight onto the ticket.",
+      "read_quality": "adequate",
+      "summary": "California-bred maiden claimers going a mile, and Wasting Aces is a class above on raw ability. His 87 was run right here, he has nine starts at the trip and he ran second last time. Twelve starts without a win would normally be a Step 9 red flag, but he is dropping in class with earnings that say he has been running against better, so I am reading it as a class artifact. Farmer Tom is the most consistent alternative at the trip. The third slot is a coin flip between Dazzle Comm and Halninethousand - both have one poor Del Mar figure and both are lightly raced. I gave it to Dazzle Comm on market support and the higher ceiling, but I would not argue with anyone who flipped them."
+    },
+    {
+      "race_number": 4,
+      "post_time": "2026-09-03T22:37:00Z",
+      "distance": "5f",
+      "surface": "turf",
+      "race_type": "Starter Optional Claiming $47,000",
+      "field_size": 8,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "1",
+          "horse": "Unbinding (GB)",
+          "morning_line": "2/1",
+          "case": "Two for two at five furlongs, two for three at Del Mar, won last out, wins at 33 percent overall, and the jockey/trainer combination is 33 percent. Nobody else in the race is perfect at the distance.",
+          "reservation": "Her top figure of 96 is eight points below Not A Sinner's, and she is 42 days between starts. She also draws the rail with the turf rail out 30 feet."
+        },
+        {
+          "program": "4",
+          "horse": "Not A Sinner (GB)",
+          "morning_line": "3/1",
+          "case": "Highest average figure at 89 and highest top figure at 104, and the 104 is simultaneously her best at Del Mar and her best at five furlongs. That is repeatable form at exactly this track and trip, not an outlier that needs explaining.",
+          "reservation": "She is 0 for 4 at Del Mar and 0 for 4 at the distance with a 9 percent win rate across 22 starts and a second last out. Step 9 chronic seconds applies and there is no class drop to excuse it."
+        },
+        {
+          "program": "2",
+          "horse": "Midnight Cowgirl",
+          "morning_line": "8/1",
+          "case": "Highest early pace figure in the field at 93, which matters more here than anywhere else on the card. Wins at 40 percent, won last out, and her 16,780 earnings per start is the best in the race. Rosario rides.",
+          "reservation": "Ninety-seven days since her last start, and her best figure at five furlongs is 62 against an 87 top. That distance number is a real problem and I am leaning on the pace figure to get past it."
+        }
+      ],
+      "alternate": {
+        "program": "8",
+        "horse": "Llamp",
+        "morning_line": "10/1",
+        "reason": "Wins at 29 percent, one for one at Del Mar, 11,293 earnings per start, the highest jockey/trainer combination in the race at 50 percent, and the freshest horse in the field at 19 days. The distance hole conceals proven class rather than merely being absent, which is the Step 7 include case.",
+        "left_off_because": "She has never run five furlongs at all and her top figure of 85 is nineteen points below Not A Sinner. The concealed-class argument gets her onto the alternate line, not past three horses with actual distance form.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "5",
+          "horse": "Hey Lil Lady",
+          "morning_line": "6/1",
+          "case_for": "A 101 top figure earned right here at Del Mar, second-highest in the race, and she ran second last out with Leparoux at 6/1.",
+          "why_still_off": "She is 0 for 7 at Del Mar and her early pace figure of 68 is the lowest in the field. In a five-furlong turf dash out of a chute the race is decided by the quarter pole and she will not be in it."
+        },
+        {
+          "program": "6",
+          "horse": "Wildfire Princess",
+          "morning_line": "12/1",
+          "case_for": "Second-fastest early pace figure at 89, an 88 at the distance, a 93 at Del Mar and a 25 percent win rate at this track, at 12/1.",
+          "why_still_off": "Sixth last out, 0 for 2 at five furlongs, a 14 percent lifetime win rate and a 0 percent jockey/trainer combination. The pace figure is real but everything downstream of it says she does not finish."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "medium",
+      "scratch_risk_note": "Still Unwritten is the also-eligible, and her early pace figure of 105 would be the fastest in the race by twelve points. If she draws in she is a mandatory add and the ticket has to be rebuilt.",
+      "read_quality": "strong",
+      "summary": "Five furlongs on grass out of the chute with the rail at 30 feet, so early pace figures get promoted above their usual weight. Unbinding is two for two at the trip and two for three here, which is the cleanest distance record on the card. Not A Sinner is faster than everyone and has run her top number at this exact track and trip, but she is 0 for 4 both places, which is the reservation you have to live with. Midnight Cowgirl gets in on the pace figure and a 40 percent win rate despite a three-month layoff and a poor distance figure - that is the weakest of the three inclusions and I want it on the record as such."
+    },
+    {
+      "race_number": 5,
+      "post_time": "2026-09-03T23:09:00Z",
+      "distance": "1m",
+      "surface": "dirt",
+      "race_type": "Maiden Special Weight $80,000",
+      "field_size": 8,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "5",
+          "horse": "Plagarist",
+          "morning_line": "3/1",
+          "case": "The only experienced horse in the race with eight starts, five of them at a mile. His 97 top figure was earned at Del Mar at this distance on dirt and is fifteen points clear of anything else proven on this surface. Earnings of 47,600 are ten times the field.",
+          "reservation": "Eight starts still a maiden at the same maiden special weight level with no class relief, which is the Step 9 chronic pattern rather than a class artifact. Fourth last out and 47 days between runs."
+        },
+        {
+          "program": "2",
+          "horse": "Collmus",
+          "morning_line": "4/1",
+          "case": "Ran a 79 in his only career start, at Del Mar, at a mile, on dirt - the second-best proven number in the race. Early pace figure of 88 puts him on the lead group. Baffert, second start, 32 days.",
+          "reservation": "A five-year-old horse making his second lifetime start is an unusual profile and I have no way to source what caused the delay from the four permitted sources. One data point is one data point."
+        },
+        {
+          "program": "6",
+          "horse": "Knave of Hearts",
+          "morning_line": "8/1",
+          "case": "An 82 in his only start, at Del Mar, which is the third-best proven Del Mar dirt figure in the field. Fourth last out, 32 days, Glatt barn with Kimura.",
+          "reservation": "One start, and an 82 that has not been repeated. He is on the ticket because the race is thin behind Plagarist, not because he has proven anything.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "7",
+        "horse": "Monumental",
+        "morning_line": "8/1",
+        "reason": "Highest average speed figure in the field at 89 and the highest early pace figure at 98. Baltas does not run three-year-olds in an 80,000 maiden special weight for exercise.",
+        "left_off_because": "Every one of those figures was earned off dirt - he has zero dirt starts and zero Del Mar starts. First-time-dirt at a mile after 81 days is a projection, not a read, and Step 7 says absence of evidence does not get weighted up.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "1",
+          "horse": "Deep Tracks",
+          "morning_line": "5/1",
+          "case_for": "An 85 best dirt figure is the third-best proven number in the race, and Eurton bringing one back off a 180-day freshening with Fresu at 5/1 is a legitimate angle.",
+          "why_still_off": "Early pace figure of 40 in a race containing a 98, a 100 and an 88. He will be last early in a field with a genuinely contested pace and only two career starts, the most recent an eighth."
+        },
+        {
+          "program": "8",
+          "horse": "Roast",
+          "morning_line": "6/1",
+          "case_for": "Early pace figure of 100 is the fastest in the race, and a horse who can go to the front alone in a maiden special weight mile is dangerous at 6/1.",
+          "why_still_off": "One career start, an 88-day gap, no Del Mar experience and a top figure of 73 that is 24 points below Plagarist. The speed is there and the ability is not demonstrated."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "low",
+      "read_quality": "adequate",
+      "summary": "Six of the eight have three starts or fewer, so this is mostly a projection race and I want that flagged. Plagarist is the exception - eight starts, five at the trip, and a 97 at Del Mar on dirt that nobody else comes close to. The counterweight is that he is a chronic maiden at level with no class drop, which is the real Step 9 warning rather than the excusable kind. Behind him I took the two horses who have actually run a number on this dirt at this track, Collmus and Knave of Hearts, over the two who have faster raw figures earned somewhere else. Monumental is the one I could be wrong about: 89 average, 98 early pace, Baltas barn, and a first-time-dirt angle I cannot price."
+    },
+    {
+      "race_number": 6,
+      "post_time": "2026-09-03T23:42:00Z",
+      "distance": "1m",
+      "surface": "turf",
+      "race_type": "Claiming $32,000 - $28,000",
+      "field_size": 10,
+      "scratches_known": [
+        6
+      ],
+      "no_play": false,
+      "selections": [
+        {
+          "program": "5",
+          "horse": "Sareeha (IRE)",
+          "morning_line": "8/1",
+          "case": "Nine wins from twenty-six starts at a mile, a 35 percent strike rate at the exact distance, which is the single best number in the race. A 105 at the trip, 34 percent on turf, 29 percent lifetime, 323,660 in earnings, and the second-fastest early pace figure at 81.",
+          "reservation": "Only 1 for 7 at Del Mar specifically, and fifth last out. Thirty-five career starts means she is what she is."
+        },
+        {
+          "program": "4",
+          "horse": "Dea Matrona (FR)",
+          "morning_line": "3/1",
+          "case": "Wins at 30 percent, won last out, best figure of 104 earned both at Del Mar and at this distance, 27 percent at a mile, and the second-highest earnings per start in the race.",
+          "reservation": "Jockey/trainer combination is only 10 percent, the lowest of the three I am using, and she is the 3/1 favorite with no price."
+        },
+        {
+          "program": "7",
+          "horse": "The White Lady (FR)",
+          "morning_line": "5/2",
+          "case": "Average speed figure of 97 is eight points clear of the entire field. A 102 at Del Mar, 50 percent at this track, and four rivals with early pace figures between 77 and 81 means the pace should be genuinely contested and come back to her.",
+          "reservation": "Early pace figure of 33 against a field running 58 to 81 - the biggest gap in the race - and she is 0 for 2 at a mile. She needs the pace collapse to actually happen, and at 5/2 you are paying for it in advance."
+        }
+      ],
+      "alternate": {
+        "program": "1",
+        "horse": "Corporal Violette (IRE)",
+        "morning_line": "8/1",
+        "reason": "Owns the fastest figure in the race at 106 and earned it at both this track and this distance. Wins at 31 percent at the trip, and the 67 percent jockey/trainer combination is the highest anywhere on the card.",
+        "left_off_because": "Seventh last out with a career average of 83 against that 106, which says the top number is stale. Thirty-eight starts with no improvement curve, and a 65 early pace figure leaves her in the second flight behind a pace she cannot take advantage of.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "8",
+          "horse": "Cameron Slough",
+          "morning_line": "15/1",
+          "case_for": "A 104 at the distance, a 103 at Del Mar, an 88 average and a 77 early pace figure that puts her right on a hot pace, at 15/1. The price is wrong for those numbers.",
+          "why_still_off": "Three wins from nineteen at the distance and 14 percent lifetime from 21 starts, with a 0 percent jockey/trainer combination. She runs these figures and gets beaten - that is the pattern, not the exception."
+        },
+        {
+          "program": "11",
+          "horse": "Little Hidden Port (ARG)",
+          "morning_line": "5/1",
+          "case_for": "Wins at 24 percent with a 101 earned at Del Mar and a third last out, and she is 5/1 with Rosario for Sadler.",
+          "why_still_off": "Earnings per start of 2,258 is the lowest in the field despite that 24 percent win rate, which means the wins came in materially cheaper spots. She is 0 for 3 at Del Mar, 0 for 2 at a mile, and her early pace figure of 30 is second-slowest in a race where the closer's ticket is already spoken for by The White Lady."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "high",
+      "scratch_risk_note": "Catalina Cocktail is already scratched and there are three also-eligibles - Miss Meagher, Ketonia and Eva Lea. Miss Meagher has an 89 average and is 6/1, Ketonia is also 6/1, and Eva Lea carries a 100 percent jockey/trainer combination. Any two scratches materially changes this race and the ticket must be rebuilt, not patched.",
+      "read_quality": "strong",
+      "summary": "Best-populated data of any race on the card and the deepest field. Sareeha's distance record is the standout single statistic in the race - nine wins from twenty-six at a mile, with a 105 to go with it. Dea Matrona is the most currently in-form horse: 30 percent, won last out, 104 at track and distance. The White Lady is the awkward one. Her 97 average is eight points clear of everything and her 33 early pace figure is 25 points behind everything, so the read comes down entirely to whether the pace melts. With four rivals in the 77 to 81 early range it probably does, and the rail out 30 feet lengthens the run home in her favour, so she stays. Corporal Violette has the race's fastest figure and the card's best jockey/trainer combination and is genuinely close to the third slot."
+    },
+    {
+      "race_number": 7,
+      "post_time": "2026-09-04T00:12:00Z",
+      "distance": "1m",
+      "surface": "dirt",
+      "race_type": "Allowance Optional Claiming $20,000",
+      "field_size": 10,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "7",
+          "horse": "Theresasilverlinin",
+          "morning_line": "12/1",
+          "case": "Eight wins from twenty-seven at 30 percent, 273,860 in earnings which is the highest in the race, the highest top figure at 102 earned on this surface, the fastest early pace figure at 82, 50 percent at Del Mar and 30 percent at a mile. She won last out. At 12/1 the price does not match any of that.",
+          "reservation": "Her best figure at Del Mar is only 78 against a 102 top, and the jockey/trainer combination is 6 percent, the lowest of anyone I am using. She is also the only one in here running with a claiming tag, which is why the morning line is where it is."
+        },
+        {
+          "program": "2",
+          "horse": "Christel Clean",
+          "morning_line": "5/2",
+          "case": "Second-highest average figure at 86, 50 percent at Del Mar, 40 percent on dirt, the highest earnings per start in the race at 17,249, second last out, and Rosario for Sadler at 24 percent.",
+          "reservation": "Top figure of only 91 with a best-at-distance of 84, and she is 0 for 1 at a mile. Her early pace figure of 64 is modest for a race where the pace should be honest."
+        },
+        {
+          "program": "10",
+          "horse": "Green Zone",
+          "morning_line": "8/1",
+          "case": "Wins at 29 percent, won last out, a 93 earned at Del Mar, 50 percent at this track, 20 percent at the distance, and back in 14 days.",
+          "reservation": "Only seven career starts and an early pace figure of 63 that is among the slower in the field. Jockey/trainer combination is 10 percent."
+        }
+      ],
+      "alternate": {
+        "program": "4",
+        "horse": "Pavel Is Appealing",
+        "morning_line": "7/2",
+        "reason": "Wins at 25 percent, a 96 earned at Del Mar which is second-best at this track in the field, 67 percent on dirt, third-highest earnings per start, third last out, Rispoli for O'Neill.",
+        "left_off_because": "Her best figure at a mile is 77, nineteen points under her top and the lowest distance figure of any horse in contention. Every good number she owns was run sprinting, and she is 0 for 1 at the trip.",
+        "near_coin_flip": true
+      },
+      "fades": [
+        {
+          "program": "1",
+          "horse": "Dorie Miller",
+          "morning_line": "8/1",
+          "case_for": "A 98 top figure and a 94 at the distance, both better than Christel Clean's best, at 8/1 in a race without a runaway favourite.",
+          "why_still_off": "Two wins from thirty-eight starts, zero from eleven at Del Mar and zero from thirteen at a mile. She has had every opportunity for those figures to convert and they never have."
+        },
+        {
+          "program": "6",
+          "horse": "Suntory Time",
+          "morning_line": "12/1",
+          "case_for": "A 92 earned at Del Mar, an 82 average, second last out and the freshest horse in the race at 14 days, at 12/1.",
+          "why_still_off": "Eleven percent lifetime, 0 for 2 at this track, one win from seven at the distance, and a 0 percent jockey/trainer combination. The recent second is real but there is nothing behind it."
+        }
+      ],
+      "confidence": "standard",
+      "scratch_risk": "low",
+      "read_quality": "strong",
+      "summary": "This is the value race on the card. Theresasilverlinin has the highest win rate, the highest earnings, the fastest top figure, the fastest early pace figure, the best Del Mar record and the best last-out finish, and she is 12/1. The market is discounting her because she is a six-year-old dropping in with a 20,000 tag against horses entered for nothing, and because her Del Mar figure is well short of her top. I think that discount is too large. Christel Clean is the legitimate favourite on class and connections but her ceiling is 91 and she has never won at a mile. Green Zone is the quietly correct third - 29 percent, won last out, a 93 here, back in two weeks and 8/1."
+    },
+    {
+      "race_number": 8,
+      "post_time": "2026-09-04T00:42:00Z",
+      "distance": "1 1/16m",
+      "surface": "turf",
+      "race_type": "Maiden Claiming $50,000",
+      "field_size": 9,
+      "no_play": false,
+      "selections": [
+        {
+          "program": "1",
+          "horse": "Heroic Dose",
+          "morning_line": "7/2",
+          "case": "Highest top figure among the actual runners at 92, earned at Del Mar on turf. All three career starts have been on grass, he ran second last out, and Leparoux rides for Mullins.",
+          "reservation": "Early pace figure of 63 is on the slow side for a field where three horses are in the 70s and 90s, and he has never gone this far. Three starts is a thin sample to hang the race on."
+        },
+        {
+          "program": "5",
+          "horse": "High King",
+          "morning_line": "5/2",
+          "case": "Earnings of 73,360 are almost double the field, fifteen of sixteen starts have been on turf, and he has four starts at Del Mar. An 88 top figure on grass and a fourth last out.",
+          "reservation": "Sixteen starts and still a maiden. He is in maiden claiming 50,000 which softens it, but a horse who has not won in sixteen tries has to be treated as a coverage horse, not a bet."
+        },
+        {
+          "program": "6",
+          "horse": "Shapoval",
+          "morning_line": "3/1",
+          "case": "Thirteen starts with eleven on turf, an 85 top figure on grass, an 81 at Del Mar, 50,759 in earnings which is second in the race, and Rosario rides for Miller.",
+          "reservation": "Fifth last out, 46 days between starts, and a 70 average that is the lowest of the three I am using.",
+          "coverage_only": true
+        }
+      ],
+      "alternate": {
+        "program": "4",
+        "horse": "Sissy Girl",
+        "morning_line": "8/1",
+        "reason": "Only two career starts with a 77 average and a 77 early pace figure that puts her forwardly placed, and stretching out to a mile and a sixteenth on turf is the kind of move a lightly raced filly improves off.",
+        "left_off_because": "Her top figure is 78, fourteen points below Heroic Dose, and she finished eighth last out. The improvement case is built on hope rather than on anything in the data.",
+        "near_coin_flip": false
+      },
+      "fades": [
+        {
+          "program": "9",
+          "horse": "Milken Cookies",
+          "morning_line": "8/1",
+          "case_for": "An early pace figure of 92, second-fastest among the runners, from the D'Amato barn with Kimura at 8/1. A 453-day layoff often means a horse that had a problem and got it fixed.",
+          "why_still_off": "One lifetime start, 453 days ago, at a shorter trip, with no Del Mar experience. There is no layoff column in the workbook and no way to source a barn-off-the-layoff statistic from the four permitted sources. Step 7 calls this absence of evidence, not concealed class, so it does not get weighted up."
+        },
+        {
+          "program": "3",
+          "horse": "Roxiiesbadboy",
+          "morning_line": "15/1",
+          "case_for": "Fastest early pace figure among the runners at 96, and in a maiden claiming turf route a loose lead is a live way to steal one at 15/1.",
+          "why_still_off": "A 54 average, a 39 best figure at Del Mar, seventh last out and 215 days off. The speed figure is the only thing in his profile that is not poor."
+        }
+      ],
+      "confidence": "spread",
+      "scratch_risk": "high",
+      "scratch_risk_note": "Three also-eligibles - Dr. Filkins, Fawcett and Lucky Sniper. Lucky Sniper has the highest average figure of anyone entered in the race at 79 plus a 91 at Del Mar, and Fawcett is the only horse in the entire field with starts at a mile and a sixteenth plus an 87 early pace figure. If either draws in they are mandatory adds and this race has to be restructured.",
+      "read_quality": "weak",
+      "summary": "Weakest read on the card and I want that stated plainly rather than buried. Maiden claiming turf route with a first-time starter, a horse off 453 days, and almost nobody in the field with a figure at a mile and a sixteenth - the best-at-distance column is empty for eight of the nine runners. Heroic Dose has the best turf figure and it was earned here. High King and Shapoval are the experience plays, both with earnings that say they have been running for better money than this, both chronic maidens. Three deep is the minimum here and it should probably be four if the ticket can carry it. If more than one also-eligible draws in, tear this leg up and start over."
+    }
+  ],
+  "tickets": [
+    {
+      "type": "pick5",
+      "races": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "structure": [
+        [
+          "4"
+        ],
+        [
+          "8",
+          "6",
+          "2"
+        ],
+        [
+          "9",
+          "4",
+          "10"
+        ],
+        [
+          "1",
+          "4",
+          "2"
+        ],
+        [
+          "5",
+          "2",
+          "6"
+        ]
+      ],
+      "base": 0.5,
+      "cost": 40.5,
+      "note": "50 cent Early Pick 5. 1 x 3 x 3 x 3 x 3 = 81 combinations at 50 cents = 40.50. Bit's Tiger Magic is singled in the opener on a five-horse field. To add Tahini as a save in race 1 the structure becomes 2 x 3 x 3 x 3 x 3 = 162 combinations = 81.00."
+    },
+    {
+      "type": "pick4",
+      "races": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "structure": [
+        [
+          "5",
+          "2",
+          "6"
+        ],
+        [
+          "5",
+          "4",
+          "7"
+        ],
+        [
+          "7",
+          "2",
+          "10"
+        ],
+        [
+          "1",
+          "5",
+          "6"
+        ]
+      ],
+      "base": 0.5,
+      "cost": 40.5,
+      "note": "50 cent Late Pick 4. 3 x 3 x 3 x 3 = 81 combinations at 50 cents = 40.50. Races 6 and 8 both carry high scratch risk from also-eligibles, so this ticket should not be bought until the final scratch sheet is out."
+    }
+  ],
+  "revisions": [],
+  "day_picks": {
+    "best_bet": {
+      "race": 1,
+      "program": "4"
+    },
+    "longshot_of_day": {
+      "race": 7,
+      "program": "7"
+    }
+  }
+}
