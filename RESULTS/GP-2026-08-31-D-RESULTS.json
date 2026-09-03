@@ -1,0 +1,124 @@
+{
+  "card_id": "GP-2026-08-31-D",
+  "chart_url": "https://www.equibase.com/static/chart/summary/GP083126USA-EQB.html",
+  "winners": [
+    {
+      "race": 1,
+      "program": "7",
+      "horse": "Veronika Z",
+      "win_payoff": 2.6
+    },
+    {
+      "race": 2,
+      "program": "5",
+      "horse": "Amande",
+      "win_payoff": 3.8
+    },
+    {
+      "race": 3,
+      "program": "4",
+      "horse": "Shelby Coupe",
+      "win_payoff": 14.8
+    },
+    {
+      "race": 4,
+      "program": "6",
+      "horse": "Bail Us Out",
+      "win_payoff": 4.2
+    },
+    {
+      "race": 5,
+      "program": "4",
+      "horse": "Sir Angelus",
+      "win_payoff": 4.0
+    },
+    {
+      "race": 6,
+      "program": "5",
+      "horse": "Act a Fool",
+      "win_payoff": 2.8
+    },
+    {
+      "race": 7,
+      "program": "2",
+      "horse": "Gregarious",
+      "win_payoff": 13.0
+    },
+    {
+      "race": 8,
+      "program": "1",
+      "horse": "Blue Slide Park",
+      "win_payoff": 11.2
+    },
+    {
+      "race": 9,
+      "program": "6",
+      "horse": "Neodera",
+      "win_payoff": 4.8
+    }
+  ],
+  "tickets": [
+    {
+      "type": "pick3",
+      "races": [
+        1,
+        2,
+        3
+      ],
+      "returned": 0,
+      "alive_through_leg": 2
+    },
+    {
+      "type": "pick4",
+      "races": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "returned": 0,
+      "alive_through_leg": 1
+    },
+    {
+      "type": "pick3",
+      "races": [
+        5,
+        6,
+        7
+      ],
+      "returned": 18.5,
+      "alive_through_leg": 3
+    },
+    {
+      "type": "pick3",
+      "races": [
+        6,
+        7,
+        8
+      ],
+      "returned": 98.3,
+      "alive_through_leg": 3
+    },
+    {
+      "type": "pick3",
+      "races": [
+        7,
+        8,
+        9
+      ],
+      "returned": 0,
+      "alive_through_leg": 2
+    },
+    {
+      "type": "pick4",
+      "races": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "returned": 0,
+      "alive_through_leg": 3
+    }
+  ]
+}
