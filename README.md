@@ -13,10 +13,11 @@ meaning and is not graded.
 No-play races are excluded from the rate entirely. Declining to play is a 
 decision, not an absence, and it is recorded as one.
 
-*Rebuilt 2026-09-03 00:41 UTC from 0 graded card(s).*
+*Rebuilt 2026-09-03 01:09 UTC from 0 graded card(s).*
 
 ## Published, not yet graded
 
+- [DMR-2026-09-03-D](CARDS-VIEW/DMR-2026-09-03-D.md)
 - [GP-2026-08-31-D](CARDS-VIEW/GP-2026-08-31-D.md)
 - [SAR-2026-09-03-D](CARDS-VIEW/SAR-2026-09-03-D.md)
 
